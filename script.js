@@ -6,22 +6,47 @@ let etapa = 0;
 
 const dialogos = [
   {
-    fala: "Precisamos conversar... Acho que isso não está mais funcionando.",
+    fala: "A gente precisa conversar... Sinto que estamos vivendo em ciclos que só machucam a gente.",
     opcoes: [
-      { texto: "Mas por quê? Eu ainda te amo.", resposta: "Você só diz isso quando me vê indo embora.", fim: false },
-      { texto: "Ok, então... Adeus.", resposta: "É só isso? Nem vai tentar lutar por mim?", fim: true },
-      { texto: "Você sempre foi assim. Nunca muda.", resposta: "Tá vendo? É por isso que eu quero terminar.", fim: true }
+      {
+        texto: "Mas eu ainda te amo, de verdade.",
+        resposta: "Amor não é só dizer, é mostrar. E eu cansei de esperar atitudes.",
+        fim: false
+      },
+      {
+        texto: "Então é isso? Vai jogar tudo fora assim?",
+        resposta: "Eu lutei por nós por tanto tempo... Agora tô lutando por mim.",
+        fim: true
+      },
+      {
+        texto: "Você sempre faz drama por tudo.",
+        resposta: "E você sempre desdenha dos meus sentimentos. É exatamente por isso que quero terminar.",
+        fim: true
+      }
     ]
   },
   {
-    fala: "Você nunca ouve o que eu digo, só finge que se importa.",
+    fala: "Sinto que falo com uma parede. Você escuta, mas não ouve. Entende?",
     opcoes: [
-      { texto: "Eu posso mudar, me dá uma chance.", resposta: "Você sempre promete, mas nunca cumpre...", fim: false },
-      { texto: "Desculpa, eu realmente errei.", resposta: "Talvez... talvez ainda haja uma chance.", fim: true },
-      { texto: "Se você acha isso, então termina logo.", resposta: "Então tá. Acabou.", fim: true }
+      {
+        texto: "Eu sei... Mas posso melhorar. Me dá só mais uma chance.",
+        resposta: "Você já disse isso outras vezes... E olha onde estamos agora.",
+        fim: false
+      },
+      {
+        texto: "Eu errei, eu sei. Mas eu me importo com você.",
+        resposta: "Talvez... Talvez ainda haja algo entre a gente. Mas precisa ser diferente.",
+        fim: true
+      },
+      {
+        texto: "Se você acha isso, talvez seja melhor acabar logo.",
+        resposta: "Então tá. Se essa é sua decisão, acabou mesmo.",
+        fim: true
+      }
     ]
   }
 ];
+
 
 function iniciarJogo() {
   telaInicial.classList.add("hidden");
@@ -100,5 +125,5 @@ function mostrarEtapa() {
 }
 
 function alternarTema() {
-  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark-mode"); // Alterado de "dark-theme" para "dark-mode"
 }

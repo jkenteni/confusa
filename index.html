@@ -3,38 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Precisamos Conversar...</title>
+  <title>Confusa?</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Tela Inicial -->
-<div class="tela-inicial" id="telaInicial">
-  <button class="toggle-theme" onclick="alternarTema()">🌓</button>
-  <h1>Precisamos conversar...</h1>
-  <p>
-    Tudo parecia bem... até que chegou essa mensagem.<br><br>
-    Agora, é sua chance de impedir o fim do relacionamento.
-  </p>
-  <button onclick="iniciarJogo()">Iniciar</button>
-</div>
-
-<!-- Chat -->
-<div class="chat-container" id="chatContainer">
-  <div class="chat-header">
-    <img src="https://i.pravatar.cc/300?img=65" alt="Foto de perfil">
-    <div class="name">Amor 💔</div>
-    <div class="icons">
-      <span>📞</span>
-      <span>🎥</span>
-      <span>⋮</span>
-    </div>
+  <!-- Tela Inicial -->
+  <div class="tela-inicial" id="telaInicial">
+    <button class="toggle-theme" onclick="alternarTema()">🌓</button>
+    <h1>Precisamos conversar...</h1>
+    <p>
+      Tudo parecia normal...<br> até que aquela mensagem chegou.<br><br>
+      Agora não tem mais como evitar. Cada palavra importa.<br>
+      Essa pode ser a última conversa... ou um novo começo.<br><br>
+      Você está pronto para encarar a verdade?
+    </p>
+    <button onclick="iniciarJogo()">Começar</button>
   </div>
-  <div class="chat-body" id="chat"></div>
-  <div class="options" id="options"></div>
-</div>
 
-<script src="script.js"></script>
+  <!-- Chat -->
+  <div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+      <img src="https://i.pravatar.cc/300?img=65" alt="Foto de perfil">
+      <div class="name">Amor 💔</div>
+      <div class="icons">
+        <span>📞</span>
+        <span>🎥</span>
+        <span>⋮</span>
+      </div>
+    </div>
+    <div class="chat-body" id="chat"></div>
+    <div class="options" id="options"></div>
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
