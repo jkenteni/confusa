@@ -176,7 +176,7 @@ body {
 }
 
 .options {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   gap: 10px;
