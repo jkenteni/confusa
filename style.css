@@ -74,6 +74,20 @@ body {
   animation: pulse 1.5s infinite;
 }
 
+.footer {
+    position: absolute;
+    bottom: env(safe-area-inset-bottom, 20px); /* Garante espaço seguro em celulares */
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .dark-mode .footer {
+    color: #bbb;
+  }
+
 .toggle-theme {
   position: absolute;
   top: 15px;
@@ -195,4 +209,44 @@ body {
 
 .hidden {
   display: none;
+}
+
+#telaFinal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 430px;
+  height: 100vh;
+  background-color: white;
+  padding: 30px;
+  transition: background 0.3s;
+}
+
+.dark-mode #telaFinal {
+  background-color: #1e1e1e;
+  color: var(--text-dark);
+}
+
+#telaFinal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#telaFinal p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#telaFinal button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
 }

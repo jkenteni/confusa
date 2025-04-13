@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <audio id="notificacaoAudio" src="notificacao.mp3" preload="auto"></audio>
+
+
   <!-- Tela Inicial -->
   <div class="tela-inicial" id="telaInicial">
     <button class="toggle-theme" onclick="alternarTema()">🌓</button>
@@ -19,6 +22,9 @@
       Você está pronto para encarar a verdade?
     </p>
     <button onclick="iniciarJogo()">Começar</button>
+    <div class="footer">
+        <p>@SopinhaDevs</p>
+    </div>
   </div>
 
   <!-- Chat -->
@@ -35,6 +41,13 @@
     <div class="chat-body" id="chat"></div>
     <div class="options" id="options"></div>
   </div>
+
+  <div id="telaFinal" class="hidden">
+    <h2 id="mensagemFinal"></h2>
+    <p id="numeroFinal"></p>
+    <button onclick="window.location.reload()">Jogar Novamente</button>
+  </div>
+  
 
   <script src="script.js"></script>
 
